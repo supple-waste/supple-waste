@@ -7,7 +7,10 @@ repositories {
 
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.13'
+    compile 'org.apache.xmlgraphics:batik:1.9.1'
     compile 'org.apache.xmlgraphics:batik-svggen:1.9.1'
-
+    compile 'org.apache.xmlgraphics:batik-dom:1.9.1'
+    compile 'org.apache.xmlgraphics:batik-swing:1.9.1'
+    compile 'com.google.guava:guava:23.0'
     testCompile 'junit:junit:4.12'
 }
