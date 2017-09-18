@@ -45,18 +45,6 @@ public class Main {
         SVGDocument document = (SVGDocument) domImpl.createDocument(svgNS, "svg", null);
         SVGGraphics2D svgGenerator = new SVGGraphics2D(document);
 
-        Font fonts[] =
-                GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts();
-
-              for (Font font2 : fonts) {
-                System.out.println("font: " + font2.getName());
-                if (font2.getName().equals("Ubuntu")) {
-                    svgGenerator.setFont(font2.deriveFont(12f));
-                }
-              }
-
-
-
         writeWords(words, svgGenerator);
 
         boolean useCSS = true; // we want to use CSS style attributes
