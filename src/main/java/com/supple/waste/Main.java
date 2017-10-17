@@ -1,5 +1,6 @@
 package com.supple.waste;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontMetrics;
@@ -9,6 +10,7 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Shape;
 import java.awt.font.GlyphVector;
 import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -27,8 +29,8 @@ import com.google.common.base.Charsets;
 
 public class Main {
 
-    private static final Color CUT_COLOR = Color.RED;
-    private static final Color BURN_COLOR = Color.BLUE;
+    private static final Color CUT_COLOR = Color.BLUE;
+    private static final Color BURN_COLOR = Color.BLACK;
     private static final int HEIGHT_PADDING = 5;
     private static final int WIDTH_PADDING = 6;
 
@@ -65,7 +67,7 @@ public class Main {
         int y = BORDER_PADDING;
 
         for (String word : words) {
-            int width = getWordWidth(graphics, word);
+            int width = getWordWidth(word);
             if (x + width + ELEMENT_PADDING + BORDER_PADDING> CANVAS_WIDTH) {
                 x = BORDER_PADDING;
                 y += elementHeight + ELEMENT_PADDING;
@@ -83,26 +85,47 @@ public class Main {
         return fm.getHeight() + HEIGHT_PADDING;
     }
 
-    private static int getWordWidth(Graphics2D graphics, String word) {
-        Font font = graphics.getFont();
-        GlyphVector gv = font.createGlyphVector(graphics.getFontRenderContext(), word);
-        Rectangle2D stringBoundsForPosition = gv.getOutline().getBounds2D();
-        double xForShapeCreation = -500;
-        double yForShapeCreation = -500;
-        Shape textShape = gv.getOutline((float) xForShapeCreation, (float) yForShapeCreation + graphics.getFontMetrics(font).getAscent());
-        graphics.fill(textShape);
-        Rectangle2D stringBoundsForEverything = textShape.getBounds2D();
-        return (int) stringBoundsForEverything.getWidth() + WIDTH_PADDING *2;
+    private static int getWordWidth(String word) {
+    	BufferedImage image = new BufferedImage(300, 300, BufferedImage.TYPE_INT_RGB);
+    	Graphics2D graphics = (Graphics2D) image.getGraphics();
+    	try {
+	        Font font = graphics.getFont();
+	        GlyphVector gv = font.createGlyphVector(graphics.getFontRenderContext(), word);
+	        Rectangle2D stringBoundsForPosition = gv.getOutline().getBounds2D();
+	        double xForShapeCreation = -500;
+	        double yForShapeCreation = -500;
+	        Shape textShape = gv.getOutline((float) xForShapeCreation, (float) yForShapeCreation + graphics.getFontMetrics(font).getAscent());
+	        graphics.fill(textShape);
+	        Rectangle2D stringBoundsForEverything = textShape.getBounds2D();
+	        return (int) (stringBoundsForEverything.getWidth()*.9 + WIDTH_PADDING *2);
+    	} finally {
+    		graphics.dispose();
+    	}
     }
 
     private static void writeWord(Graphics2D graphics, String word, int x, int y) {
+        int width = getWordWidth(word);
+        int height = getElementHeight(graphics);
+        
         graphics.setColor(CUT_COLOR);
-
-        int width = getWordWidth(graphics, word);
-        graphics.drawRoundRect(x, y, width, getElementHeight(graphics), 7, 7);
+        graphics.setStroke(new BasicStroke(0.01f));
+        graphics.drawRoundRect(x, y, width, height, 7, 7);
+        
 
         graphics.setColor(BURN_COLOR);
-        graphics.drawString(word, x + (WIDTH_PADDING / 2), y + (HEIGHT_PADDING / 2) + graphics.getFontMetrics().getAscent());
+        Font font = graphics.getFont();
+        GlyphVector gv = font.createGlyphVector(graphics.getFontRenderContext(), word);
+        
+//        BufferedImage textImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+//        Graphics2D textGraphics = (Graphics2D) textImage.getGraphics();
+        try {
+        	
+        	graphics.fill(gv.getOutline(x + (WIDTH_PADDING / 2), y + (HEIGHT_PADDING / 2) + graphics.getFontMetrics().getAscent()));
+        
+//        graphics.drawString(word, x + (WIDTH_PADDING / 2), y + (HEIGHT_PADDING / 2) + graphics.getFontMetrics().getAscent());
+        } finally {
+        	
+        }
     }
 
     private static List<String> getWords(String path) {
