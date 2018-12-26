@@ -3,4 +3,4 @@
 .project
 .settings/
 bin/
-
+site/themes/hermit/resources/_gen

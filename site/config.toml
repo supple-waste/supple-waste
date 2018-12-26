@@ -12,7 +12,7 @@ theme = "hermit"
 [menu]
 
   [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
+    name = "Poems"
+    url = "/poems/"
     weight = 10
 
