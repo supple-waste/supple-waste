@@ -262,16 +262,26 @@ table {
   }
 }
 
-#site-footer {
+.site-footer {
   text-align: center;
   font-size: .9em;
   margin-bottom: 96px;
   margin-top: 64px;
+  @include dimmed;
 
   p {
     margin: 0;
   }
 }
+
+#home-footer {
+  text-align: center;
+  font-size: .6em;
+  line-height: normal;
+  width: 100px;
+  @include dimmed;
+}
+
 
 // Spotlight
 //
@@ -381,18 +391,6 @@ p.img-404 {
     margin-top: .5em;
   }
 }
-
-#home-footer {
-  text-align: center;
-  font-size: .6em;
-  line-height: normal;
-  @include dimmed;
-
-  p {
-    margin-top: 0;
-  }
-}
-
 
 // list.html
 //
