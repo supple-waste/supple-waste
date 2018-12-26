@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Supple Waste</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Supple Waste</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Sep 2017 19:16:05 -0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>#2</title>
+      <link>http://example.org/poems/2/</link>
+      <pubDate>Mon, 04 Sep 2017 19:16:05 -0800</pubDate>
+      
+      <guid>http://example.org/poems/2/</guid>
+      <description>why rush sweet muse
+power is not smoke
+but longs yet goes crazy
+let tonight have the tiny house
+a tribe with miniature holy nuggets
+caress the fiasco if I want booze
+or tackle strange horrendous dread put stupidly obvious that scene is over
+why come silly drug
+flavor is both stone
+yet works but goes slick
+make maybe take the large place
+a ocean with wonderful numb muffins
+destroy the fiesta if I need juice</description>
+    </item>
+    
+    <item>
+      <title>#1</title>
+      <link>http://example.org/poems/1/</link>
+      <pubDate>Mon, 04 Sep 2017 18:31:21 -0800</pubDate>
+      
+      <guid>http://example.org/poems/1/</guid>
+      <description>our situation is a battle
+we punish delicious toast or party to beautiful sausage
+feral love ferocious lunatic friend
+lick my empire, dance like rubbish
+play my stratosphere, mumble your thirst
+give sensation one chance
+trust me
+all technology is a worship
+we quench diabolical charm and chant to majestic banana
+lame love georgeous thing gypsy
+eat my street, fiddle my baloney
+nest my universe, surrender your hunger
+wish commotion some choice</description>
+    </item>
+    
+  </channel>
+</rss>

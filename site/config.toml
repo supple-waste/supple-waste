@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Supple Waste"
 theme = "hermit"
+publishDir = "../docs"
 
 [params]
   dateform        = "Jan 2, 2006"
