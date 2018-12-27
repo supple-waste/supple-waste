@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Poems on Supple Waste</title>
-    <link>http://example.org/poems/</link>
+    <link>https://supple-waste.github.io/supple-waste/poems/</link>
     <description>Recent content in Poems on Supple Waste</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Sep 2017 19:16:05 -0800</lastBuildDate>
     
-	<atom:link href="http://example.org/poems/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://supple-waste.github.io/supple-waste/poems/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>#2</title>
-      <link>http://example.org/poems/2/</link>
+      <link>https://supple-waste.github.io/supple-waste/poems/2/</link>
       <pubDate>Mon, 04 Sep 2017 19:16:05 -0800</pubDate>
       
-      <guid>http://example.org/poems/2/</guid>
+      <guid>https://supple-waste.github.io/supple-waste/poems/2/</guid>
       <description>why rush sweet muse
 power is not smoke
 but longs yet goes crazy
@@ -34,10 +34,10 @@ destroy the fiesta if I need juice</description>
     
     <item>
       <title>#1</title>
-      <link>http://example.org/poems/1/</link>
+      <link>https://supple-waste.github.io/supple-waste/poems/1/</link>
       <pubDate>Mon, 04 Sep 2017 18:31:21 -0800</pubDate>
       
-      <guid>http://example.org/poems/1/</guid>
+      <guid>https://supple-waste.github.io/supple-waste/poems/1/</guid>
       <description>our situation is a battle
 we punish delicious toast or party to beautiful sausage
 feral love ferocious lunatic friend

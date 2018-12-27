@@ -3,34 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/poems/2/</loc>
+    <loc>https://supple-waste.github.io/supple-waste/poems/2/</loc>
     <lastmod>2017-09-04T19:16:05-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/poems/1/</loc>
+    <loc>https://supple-waste.github.io/supple-waste/poems/1/</loc>
     <lastmod>2017-09-04T18:31:21-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://supple-waste.github.io/supple-waste/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/poems/</loc>
+    <loc>https://supple-waste.github.io/supple-waste/poems/</loc>
     <lastmod>2017-09-04T19:16:05-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://supple-waste.github.io/supple-waste/</loc>
     <lastmod>2017-09-04T19:16:05-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://supple-waste.github.io/supple-waste/tags/</loc>
     <priority>0</priority>
   </url>
   
