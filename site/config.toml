@@ -1,8 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://supple-waste.github.io/supple-waste/"
 languageCode = "en-us"
 title = "Supple Waste"
 theme = "hermit"
-publishDir = "../docs"
+publishDir = "docs"
 
 [params]
   dateform        = "Jan 2, 2006"
