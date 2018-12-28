@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Supple Waste"
 theme = "hermit"
 publishDir = "docs"
+googleAnalytics = "UA-131418336-1"
+
 
 [params]
   dateform        = "Jan 2, 2006"
